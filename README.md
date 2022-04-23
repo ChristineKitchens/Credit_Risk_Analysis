@@ -15,8 +15,8 @@ The Python scikit-learn and imbalanced-learn machine learning libraries were use
 The results of each model were assessed based on balanced accuracy, precision, and recall scores. The subsequent Analysis section is divided up by model analysis. Each section contains tables and screenshots of model assessment metrics (i.e. balanced accuracy scores, precision scores, recall scores, confusion matrices, classification reports). The Summary section summarizes these results and the resulting model recommendation.
 
 ## Analysis
-### Logistic Regression Model with Resampling
-#### Naive Random Oversampling 
+=== Logistic Regression Model with Resampling
+=== Naive Random Oversampling 
 - Balanced Accuracy Score: <b>0.6620175698580149</b>
 
 | Outcome    | Precision Score | Recall Score  |
