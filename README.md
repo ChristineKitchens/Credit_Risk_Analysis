@@ -18,6 +18,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 ### Logistic Regression Model with Resampling
 #### Naive Random Oversampling 
 - Balanced Accuracy Score: <b>0.6620175698580149</b>
+
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.72          |
@@ -26,6 +27,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 ![Results of Logistic Regression and Naive Random Oversampling](images/results_oversampling_naive.png)
 #### SMOTE Oversampling
 - Balanced Accuracy Score: <b>0.6568196079430206</b>
+
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.61          |
