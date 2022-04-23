@@ -20,7 +20,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Balanced Accuracy Score: <b>0.6620175698580149</b>
 
 | Outcome    | Precision Score | Recall Score  |
-| ---------- |:---------------:|------------- :|
+|:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.72          |
 | low-risk   | 1.00            | 0.60          |
   
@@ -29,7 +29,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Balanced Accuracy Score: <b>0.6568196079430206</b>
 
 | Outcome    | Precision Score | Recall Score  |
-| ---------- |:---------------:|------------- :|
+|:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.61          |
 | low-risk   | 1.00            | 0.70          |
 
@@ -38,7 +38,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Balanced Accuracy Score: <b>0.6027679241263696</b>
 
 | Outcome    | Precision Score | Recall Score  |
-| ---------- |:---------------:|------------- :|
+|:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.61          |
 | low-risk   | 1.00            | 0.59          |
 
@@ -47,7 +47,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Balanced Accuracy Score: <b>0.7887512850910909</b>
 
 | Outcome    | Precision Score | Recall Score  |
-| ---------- |:---------------:|------------- :|
+|:----------:|:---------------:|:-------------:|
 | high-risk  | 0.03            | 0.70          |
 | low-risk   | 1.00            | 0.87          |
 
@@ -57,7 +57,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Balanced Accuracy Score: <b>0.7887512850910909</b>
 
 | Outcome    | Precision Score | Recall Score  |
-| ---------- |:---------------:|------------- :|
+|:----------:|:---------------:|:-------------:|
 | high-risk  | 0.03            | 0.70          |
 | low-risk   | 1.00            | 0.87          |
 
@@ -66,7 +66,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Top 10 Importance Features According to RF Model
 
 | Feature          | Importance           |
-| ---------------- | --------------------:|
+|:----------------:|:--------------------:|
 | total_rec_prncp  | 0.07876809003486353  |
 | total_pymnt      | 0.05883806887524815  |
 | total_pymnt_inv  | 0.05625613759225244  |
@@ -83,7 +83,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 - Balanced Accuracy Score: <b>0.931601605553446</b>
 
 | Outcome    | Precision Score | Recall Score  |
-| ---------- |:---------------:|------------- :|
+|:----------:|:---------------:|:-------------:|
 | high-risk  | 0.09            | 0.92          |
 | low-risk   | 1.00            | 0.94          |
 
