@@ -1,0 +1,9 @@
+class_imbalance/*
+confusion_matrix/*
+decision_tree/*
+ensemble/*
+label_encode/*
+linear_regression_salary/*
+logistic_regression/*
+scale_and_normalize/*
+svm/*
