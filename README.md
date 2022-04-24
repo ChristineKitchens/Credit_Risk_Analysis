@@ -80,7 +80,7 @@ The results of each model were assessed based on metrics that included balanced 
 ### Ensemble Models
 #### Balanced Random Forest Classification
 - The model had high precision in regards to low-risk outcomes, but low precision in regards to high-risk outcomes.
-- The recall scores for both the high-risk and low-risk outcomes were reduced relative to the prior undersampling methods.
+- The recall scores for both the high-risk and low-risk outcomes were improved relative to the resampling methods.
 - Overall, the model had a balanced accuracy score of <b>0.7887512850910909</b>
 
 <figcaption><b>Table 5. Random Forest Model Precision and Recall Scores for Target Outcomes</b></figcaption>
@@ -112,7 +112,9 @@ The results of each model were assessed based on metrics that included balanced 
 
 
 #### Easy Ensemble with AdaBoost 
-- Balanced Accuracy Score: <b>0.931601605553446</b>
+- The model had high precision in regards to low-risk outcomes, but low precision in regards to high-risk outcomes.
+- The recall scores for both the high-risk and low-risk outcomes were improved relative to all other models.
+- Overall, the model had a balanced accuracy score of <b>0.931601605553446</b>
 
 <figcaption><b>Table 7. AdaBoost Model Precision and Recall Scores for Target Outcomes</b></figcaption>
 
@@ -126,8 +128,8 @@ The results of each model were assessed based on metrics that included balanced 
 ![Results of Easy Ensemble Classification with AdaBoosting](images/results_ada_boost.png)
 ## Summary
 - Of the 4 resampling machine learning models, it's challenging to identify one model that clearly outperformed the others. Some precision scores were comparable across the board, but more variance was seen in the recall scores. Some had high overall recall scores compared to others, but then their individual high-risk and low-risk scores would be below other candidate models. Looking at the imbalanced accuracy scores (a measure of overall precision/recall score tradeoffs), the naive random oversampling model performed the best of it's cohort.
-- Of the 2 ensemble models, the easy ensemble model with AdaBoosting outperformed the random forest model across all metrics. However, both ensemble models outperformed the resampling models.
-- Across all 6 machine learning models, the AdaBoosted easy ensemble by and far performed best and should be the one selected for use.
+- Of the 2 ensemble models, the AdaBoosted easy ensemble model outperformed the random forest model across all metrics. However, both ensemble models outperformed the resampling models.
+- Across all 6 machine learning models, the AdaBoosted easy ensemble by and far performed best and should be the one selected for use. However, it's important to note that, while the AdaBoosted model outperformed other candidate models across all metrics, the precision score for high-risk loan candidates was still only 0.09. If the primary purpose of the modelling effort was to identify high-risk applicants, alternative machine learning models should be explored.
 
 ## Resources
 - Data
