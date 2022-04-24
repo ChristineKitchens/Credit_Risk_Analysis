@@ -64,7 +64,7 @@ The results of each model were assessed based on metrics that included balanced 
 ![Results of Logistic Regression and Cluster Centroid Undersampling](images/results_undersampling_cluster.png)
 #### SMOTEENN Combination Sampling
 - The model had high precision in regards to low-risk outcomes, but low precision in regards to high-risk outcomes.
-- The recall scores for both the high-risk and low-risk outcomes were improved relative to all other resampling methods.
+- The recall scores for both the high-risk and low-risk outcomes were improved relative to the undersampling method, but not relative to the oversampling methods.
 - Overall, the model had a balanced accuracy score of <b>0.639214728301642</b>
 
 <figcaption><b>Table 4. SMOTEENN Combination Sampling Precision and Recall Scores for Target Outcomes</b></figcaption>
