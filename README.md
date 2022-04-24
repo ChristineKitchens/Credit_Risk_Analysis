@@ -4,7 +4,7 @@
 The Python scikit-learn and imbalanced-learn machine learning libraries were used to assess credit card risk based on features such as loan amount, interest, etc. The model target was the 'loan_risk', which can be either 'high-risk' or 'low-risk'. Data was analyzed using six different supervised machine learning models:
 
 - [Resampling Models](credit_risk_resampling.ipynb)
-  - Naive Random Oversampling
+  - [Naive Random Oversampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#naive-random-oversampling)
   - SMOTE Oversampling
   - Cluster Centroid Undersampling
   - SMOTEENN Combination Sampling
@@ -16,7 +16,9 @@ The results of each model were assessed based on balanced accuracy, precision, a
 
 ## Analysis
 ### Logistic Regression Model with Resampling
+======
 #### Naive Random Oversampling 
+
 - Balanced Accuracy Score: <b>0.6620175698580149</b>
 
 | Outcome    | Precision Score | Recall Score  |
@@ -53,6 +55,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 
 ![Results of Logistic Regression and SMOTEENN Combination Resampling](images/results_combosampling_smoteenn.png)
 ### Ensemble Models
+======
 #### Balanced Random Forest Classification
 - Balanced Accuracy Score: <b>0.7887512850910909</b>
 
@@ -63,7 +66,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 
 ![Results of Random Forest Classification](images/results_rf.png)
 
-- Top 10 Importance Features According to RF Model
+<figcaption>Top 10 Importance Features According to RF Model</figcaption>
 
 | Feature          | Importance           |
 |:----------------:|:--------------------:|
@@ -77,6 +80,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 | installment      | 0.01980242888931366  |
 | dti              | 0.01747062730041245  |
 | out_prncp_inv    | 0.016858293184471483 |
+
 
 
 #### Easy Ensemble with AdaBoost 
