@@ -3,23 +3,24 @@
 ## Overview
 The Python scikit-learn and imbalanced-learn machine learning libraries were used to assess credit card risk based on features such as loan amount, interest, etc. The model target was the 'loan_risk', which can be either 'high-risk' or 'low-risk'. Data was analyzed using six different supervised machine learning models:
 
-- [Resampling Models](credit_risk_resampling.ipynb)
+- [Resampling Models]([credit_risk_resampling.ipynb](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#logistic-regression-model-with-resampling))
   - [Naive Random Oversampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#naive-random-oversampling)
-  - SMOTE Oversampling
-  - Cluster Centroid Undersampling
-  - SMOTEENN Combination Sampling
-- [Ensemble Models](credit_risk_ensemble.ipynb)
-  - Balanced Random Forest Classification
-  - Easy Ensemble with AdaBoosting
+  - [SMOTE Oversampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#smote-oversampling)
+  - [Cluster Centroid Undersampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#cluster-centroid-undersampling)
+  - [SMOTEENN Combination Sampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#smoteenn-combination-sampling)
+- [Ensemble Models](credit_risk_ensemble.ipynb)(https://github.com/InRegards2Pluto/Credit_Risk_Analysis#ensemble-models)
+  - [Balanced Random Forest Classification](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#balanced-random-forest-classification)
+  - [Easy Ensemble with AdaBoosting](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#easy-ensemble-with-adaboost)
 
-The results of each model were assessed based on balanced accuracy, precision, and recall scores. The subsequent Analysis section is divided up by model analysis. Each section contains tables and screenshots of model assessment metrics (i.e. balanced accuracy scores, precision scores, recall scores, confusion matrices, classification reports). The Summary section summarizes these results and the resulting model recommendation.
+The results of each model were assessed based on balanced accuracy, precision, and recall scores. The subsequent [Analysis](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#analysis) section is divided up by model analysis. Each section contains tables and screenshots of model assessment metrics (i.e. balanced accuracy scores, precision scores, recall scores, confusion matrices, classification reports). The [Summary](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#summary) section summarizes these results and the resulting model recommendation. Jupyter Notebooks and data can be found in the [Resources](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#resources) section.
 
 ## Analysis
 ### Logistic Regression Model with Resampling
-======
 #### Naive Random Oversampling 
 
 - Balanced Accuracy Score: <b>0.6620175698580149</b>
+
+<figcaption><b>Table 1. Naive Random Oversampling Precision and Recall Scores for Target Outcomes</b></figcaption>
 
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
@@ -30,6 +31,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 #### SMOTE Oversampling
 - Balanced Accuracy Score: <b>0.6568196079430206</b>
 
+<figcaption><b>Table 2. SMOTE Oversampling Precision and Recall Scores for Target Outcomes</b></figcaption>
+
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.61          |
@@ -38,6 +41,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 ![Results of Logistic Regression and SMOTE Oversampling](images/results_oversampling_smote.png)
 #### Cluster Centroid Undersampling
 - Balanced Accuracy Score: <b>0.6027679241263696</b>
+
+<figcaption><b>Table 3. Cluster Centroid Undersampling Precision and Recall Scores for Target Outcomes</b></figcaption>
 
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
@@ -48,6 +53,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 #### SMOTEENN Combination Sampling
 - Balanced Accuracy Score: <b>0.7887512850910909</b>
 
+<figcaption><b>Table 4. SMOTEENN Combination Sampling Precision and Recall Scores for Target Outcomes</b></figcaption>
+
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.03            | 0.70          |
@@ -55,9 +62,10 @@ The results of each model were assessed based on balanced accuracy, precision, a
 
 ![Results of Logistic Regression and SMOTEENN Combination Resampling](images/results_combosampling_smoteenn.png)
 ### Ensemble Models
-======
 #### Balanced Random Forest Classification
 - Balanced Accuracy Score: <b>0.7887512850910909</b>
+
+<figcaption><b>Table 5. Random Forest Model Precision and Recall Scores for Target Outcomes</b></figcaption>
 
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
@@ -66,7 +74,7 @@ The results of each model were assessed based on balanced accuracy, precision, a
 
 ![Results of Random Forest Classification](images/results_rf.png)
 
-<figcaption>Top 10 Importance Features According to RF Model</figcaption>
+<figcaption><b>Table 6. Top 10 Importance Features According to RF Model</b></figcaption>
 
 | Feature          | Importance           |
 |:----------------:|:--------------------:|
@@ -85,6 +93,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 
 #### Easy Ensemble with AdaBoost 
 - Balanced Accuracy Score: <b>0.931601605553446</b>
+
+<figcaption><b>Table 7. AdaBoost Model Precision and Recall Scores for Target Outcomes</b></figcaption>
 
 | Outcome    | Precision Score | Recall Score  |
 |:----------:|:---------------:|:-------------:|
