@@ -3,12 +3,12 @@
 ## Overview
 The Python scikit-learn and imbalanced-learn machine learning libraries were used to assess credit card risk based on features such as loan amount, interest, etc. The model target was the 'loan_risk', which can be either 'high-risk' or 'low-risk'. Data was analyzed using six different supervised machine learning models:
 
-- [Resampling Models]([credit_risk_resampling.ipynb](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#logistic-regression-model-with-resampling))
+- [Resampling Models](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#logistic-regression-model-with-resampling)
   - [Naive Random Oversampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#naive-random-oversampling)
   - [SMOTE Oversampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#smote-oversampling)
   - [Cluster Centroid Undersampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#cluster-centroid-undersampling)
   - [SMOTEENN Combination Sampling](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#smoteenn-combination-sampling)
-- [Ensemble Models](credit_risk_ensemble.ipynb)(https://github.com/InRegards2Pluto/Credit_Risk_Analysis#ensemble-models)
+- [Ensemble Models](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#ensemble-models)
   - [Balanced Random Forest Classification](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#balanced-random-forest-classification)
   - [Easy Ensemble with AdaBoosting](https://github.com/InRegards2Pluto/Credit_Risk_Analysis#easy-ensemble-with-adaboost)
 
@@ -18,7 +18,9 @@ The results of each model were assessed based on balanced accuracy, precision, a
 ### Logistic Regression Model with Resampling
 #### Naive Random Oversampling 
 
-- Balanced Accuracy Score: <b>0.6620175698580149</b>
+- The model had high precision in regards to low-risk outcomes, but low-risk precision in regards to high-risk outcomes.
+- The recall scores for both the high-risk and low-risk outcomes were moderately high.
+- Overall, the model had a balanced accuracy score of <b>0.6620175698580149</b>
 
 <figcaption><b>Table 1. Naive Random Oversampling Precision and Recall Scores for Target Outcomes</b></figcaption>
 
@@ -26,10 +28,14 @@ The results of each model were assessed based on balanced accuracy, precision, a
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.72          |
 | low-risk   | 1.00            | 0.60          |
+
+<figcaption><b>Fig 1. Naive Random Oversampling Model Assessment</b></figcaption>
   
 ![Results of Logistic Regression and Naive Random Oversampling](images/results_oversampling_naive.png)
 #### SMOTE Oversampling
-- Balanced Accuracy Score: <b>0.6568196079430206</b>
+- The model had high precision in regards to low-risk outcomes, but low-risk precision in regards to high-risk outcomes.
+- The recall scores for both the high-risk and low-risk outcomes were moderately high. The high-risk recall score dropped relative to the naive random oversampling method, but the low-risk score increased.
+- Overall, the model had a balanced accuracy score of <b>0.6568196079430206</b>
 
 <figcaption><b>Table 2. SMOTE Oversampling Precision and Recall Scores for Target Outcomes</b></figcaption>
 
@@ -38,9 +44,13 @@ The results of each model were assessed based on balanced accuracy, precision, a
 | high-risk  | 0.01            | 0.61          |
 | low-risk   | 1.00            | 0.70          |
 
+<figcaption><b>Fig 2. SMOTE Oversampling Model Assessment</b></figcaption>
+
 ![Results of Logistic Regression and SMOTE Oversampling](images/results_oversampling_smote.png)
 #### Cluster Centroid Undersampling
-- Balanced Accuracy Score: <b>0.6027679241263696</b>
+- The model had high precision in regards to low-risk outcomes, but low-risk precision in regards to high-risk outcomes.
+- The recall scores for both the high-risk and low-risk outcomes were reduced relative to the prior undersampling methods.
+- Overall, the model had a balanced accuracy score of <b>0.6027679241263696</b>
 
 <figcaption><b>Table 3. Cluster Centroid Undersampling Precision and Recall Scores for Target Outcomes</b></figcaption>
 
@@ -48,6 +58,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.01            | 0.61          |
 | low-risk   | 1.00            | 0.59          |
+
+<figcaption><b>Fig 3. Cluster Centroid Undersampling Model Assessment</b></figcaption>
 
 ![Results of Logistic Regression and Cluster Centroid Undersampling](images/results_undersampling_cluster.png)
 #### SMOTEENN Combination Sampling
@@ -60,6 +72,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 | high-risk  | 0.03            | 0.70          |
 | low-risk   | 1.00            | 0.87          |
 
+<figcaption><b>Fig 4. SMOTEENN Combination Sampling Model Assessment</b></figcaption>
+
 ![Results of Logistic Regression and SMOTEENN Combination Resampling](images/results_combosampling_smoteenn.png)
 ### Ensemble Models
 #### Balanced Random Forest Classification
@@ -71,6 +85,8 @@ The results of each model were assessed based on balanced accuracy, precision, a
 |:----------:|:---------------:|:-------------:|
 | high-risk  | 0.03            | 0.70          |
 | low-risk   | 1.00            | 0.87          |
+
+<figcaption><b>Fig 5. Random Forest Model Assessment</b></figcaption>
 
 ![Results of Random Forest Classification](images/results_rf.png)
 
@@ -101,9 +117,13 @@ The results of each model were assessed based on balanced accuracy, precision, a
 | high-risk  | 0.09            | 0.92          |
 | low-risk   | 1.00            | 0.94          |
 
+<figcaption><b>Fig 6. AdaBoost Model Assessment</b></figcaption>
 
 ![Results of Easy Ensemble Classification with AdaBoosting](images/results_ada_boost.png)
 ## Summary
+- Of the 4 resampling machine learning models, the SMOTEENN combination resampling performed best. Precision scores were comparable across all 4 resampling models, but the SMOTEENN model had the highest recall score, both overall and for each potential target outcome. The balanced accuracy score for the SMOTEENN model was 0.789, compared to the 0.603-0.662 range of accuracy scores for the other models.
+- Of the 2 ensemble models, the easy ensemble model with AdaBoosting outperformed the random forest model across all metrics.
+- Across all 6 machine learning models, the AdaBoosted easy ensemble by and far performed best and should be the one selected for use.
 
 ## Resources
 - Data
